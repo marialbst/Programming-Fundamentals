@@ -95,15 +95,7 @@ namespace DifferentIntegerSize
                                     {
                                         number3 = long.Parse(input);
                                         Console.WriteLine("{0} can fit in:", number3);
-
-                                        if (number3 < 0)
-                                        {
-                                            Console.WriteLine("* long");
-                                        }
-                                        else
-                                        {
-                                            Console.WriteLine("* long");
-                                        }
+                                        Console.WriteLine("* long");
                                     }
                                     catch (OverflowException)
                                     {
