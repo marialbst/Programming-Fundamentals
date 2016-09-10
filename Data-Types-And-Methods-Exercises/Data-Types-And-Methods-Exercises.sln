@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.VowelOrDigit", "13.Vowel
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.IntToHexAndBin", "14.IntToHexAndBin\14.IntToHexAndBin.csproj", "{8804D6AF-B13E-4FA7-AF15-7DD3449C6762}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17.DifferentIntegerSize - vs.2", "17.DifferentIntegerSize - vs.2\17.DifferentIntegerSize - vs.2.csproj", "{2F6B3707-3FCD-494A-A6CA-C1A73071E7FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{8804D6AF-B13E-4FA7-AF15-7DD3449C6762}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8804D6AF-B13E-4FA7-AF15-7DD3449C6762}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8804D6AF-B13E-4FA7-AF15-7DD3449C6762}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F6B3707-3FCD-494A-A6CA-C1A73071E7FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F6B3707-3FCD-494A-A6CA-C1A73071E7FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F6B3707-3FCD-494A-A6CA-C1A73071E7FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F6B3707-3FCD-494A-A6CA-C1A73071E7FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
