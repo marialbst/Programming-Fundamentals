@@ -18,7 +18,7 @@ namespace ConvertSpeedUnits
             float mPerSecond = (distanceMeter/ totalTimeInSeconds);
             float milesPerHour = (distanceMeter / 1609f)/ totalTimeInHours;
 
-            Console.WriteLine("{0:f6}", mPerSecond);
+            Console.WriteLine("{0}", mPerSecond);
             Console.WriteLine("{0}", kmPerHour);
             Console.WriteLine("{0}", milesPerHour);
         }
