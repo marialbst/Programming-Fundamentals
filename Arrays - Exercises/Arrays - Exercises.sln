@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.LargestCommonEnd", "01.LargestCommonEnd\01.LargestCommonEnd.csproj", "{0C4D317D-FF2D-409B-A898-6265713F20CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.RotateAndSum", "02.RotateAndSum\02.RotateAndSum.csproj", "{47351A91-9690-43BB-A87A-C78C8C6D78C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.FoldAndSum", "03.FoldAndSum\03.FoldAndSum.csproj", "{2CF28C75-D657-4192-AEC0-E53C7A032972}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C4D317D-FF2D-409B-A898-6265713F20CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C4D317D-FF2D-409B-A898-6265713F20CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C4D317D-FF2D-409B-A898-6265713F20CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C4D317D-FF2D-409B-A898-6265713F20CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47351A91-9690-43BB-A87A-C78C8C6D78C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47351A91-9690-43BB-A87A-C78C8C6D78C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47351A91-9690-43BB-A87A-C78C8C6D78C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47351A91-9690-43BB-A87A-C78C8C6D78C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CF28C75-D657-4192-AEC0-E53C7A032972}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CF28C75-D657-4192-AEC0-E53C7A032972}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CF28C75-D657-4192-AEC0-E53C7A032972}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CF28C75-D657-4192-AEC0-E53C7A032972}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
