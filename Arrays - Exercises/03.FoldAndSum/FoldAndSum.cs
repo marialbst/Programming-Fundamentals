@@ -16,7 +16,7 @@ class FoldAndSum
 		{
 			subArray1[i] = original[original.Length/ 4 - 1 - i];
 		}
-		else if(i >= original.Length / 4 && i < original.Length / 2)
+		else
 		{
 			subArray1[i] = original[original.Length + original.Length / 4 - 1 - i];
 		}
