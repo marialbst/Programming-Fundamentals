@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.AppendLists", "02.Append
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.SumAdjacentEqualNumbers", "03.SumAdjacentEqualNumbers\03.SumAdjacentEqualNumbers.csproj", "{3548FA90-0C0C-4E7B-8DF4-3FD97EF06225}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.SplitByWordCasting", "04.SplitByWordCasting\04.SplitByWordCasting.csproj", "{3EEBB56E-6BC4-46C2-8C62-6C6BE99ABB17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3548FA90-0C0C-4E7B-8DF4-3FD97EF06225}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3548FA90-0C0C-4E7B-8DF4-3FD97EF06225}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3548FA90-0C0C-4E7B-8DF4-3FD97EF06225}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EEBB56E-6BC4-46C2-8C62-6C6BE99ABB17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EEBB56E-6BC4-46C2-8C62-6C6BE99ABB17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EEBB56E-6BC4-46C2-8C62-6C6BE99ABB17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EEBB56E-6BC4-46C2-8C62-6C6BE99ABB17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
