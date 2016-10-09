@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _05.ShortSortedWords
 {
@@ -10,6 +8,17 @@ namespace _05.ShortSortedWords
     {
         static void Main(string[] args)
         {
+            List<string> input = Console.ReadLine()
+                                    .ToLower()
+                                    .Split(new char[] { ' ', '.', ',', '!', '?', '(', ')', '[', ']', '\"', '\'', ':', ';' },
+                                           StringSplitOptions.RemoveEmptyEntries)
+                                    .ToList();
+
+            List<string> result = input.Distinct()
+                                        .OrderBy(word => word)
+                                        .Where(word => word.Length < 5)
+                                        .ToList();
+            Console.WriteLine(string.Join(", ", result));
         }
     }
 }
