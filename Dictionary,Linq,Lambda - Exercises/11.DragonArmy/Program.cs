@@ -11,33 +11,34 @@ namespace _11.DragonArmy
             int n = int.Parse(Console.ReadLine());
             var dragons = new Dictionary<string, Dictionary<string, int[]>>();
             int[] numbers = new int[3];
-
+            double[] totalNumbers = new double[3];
             for (int i = 0; i < n; i++)
             {
                 string[] input = Console.ReadLine().Split(' ');
                 string color = input[0];
                 string name = input[1];
-
+                
                 ExtractDefaultValues(input);
 
                 for (int j = 2; j < 5; j++)
                 {
                     numbers[j - 2] = int.Parse(input[j]);
+                    totalNumbers[j - 2] += numbers[j - 2];
                 }
 
                 AddValuesToDictionary(dragons, numbers, color, name);
             }
 
-            PrintResults(dragons);
+            PrintResults(dragons, n, totalNumbers);
 
         }
 
-        private static void PrintResults(Dictionary<string, Dictionary<string, int[]>> dragons)
+        private static void PrintResults(Dictionary<string, Dictionary<string, int[]>> dragons, int n, double[] totalNumbers)
         {
             foreach (var dragon in dragons)
             {
-                Console.WriteLine(dragon.Key);
-                Console.WriteLine($"-{string.Join(": ", dragon.Value.Select(x => $"{x.Key}-> damage: {x.Value[0]}, health: {x.Value[1]}, armor: {x.Value[2]}"))}"); //
+                Console.WriteLine($"{dragon.Key}::({totalNumbers[0] /n:f2}/{totalNumbers[1] / n:f2}/{totalNumbers[2] / n:f2})");
+                Console.Write($"-{string.Join("-", dragon.Value.OrderBy(x => x.Key).Select(x => $"{x.Key} -> damage: {x.Value[0]}, health: {x.Value[1]}, armor: {x.Value[2]}\n"))}"); //
             }
         }
 
@@ -50,7 +51,7 @@ namespace _11.DragonArmy
 
             if (!dragons[color].ContainsKey(name))
             {
-                dragons[color].Add(name, numbers);
+                dragons[color].Add(name, new int[3]);
             }
 
             for (int k = 0; k < 3; k++)
