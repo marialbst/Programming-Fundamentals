@@ -41,7 +41,8 @@ namespace _11.DragonArmy
 		var avHealth = dragon.Value.Select(x => x.Value[1]).Average();
 		var avArmor = dragon.Value.Select(x => x.Value[2]).Average();
 		Console.WriteLine($"{dragon.Key}::({avDamage:f}/{avHealth:f}/{avArmor:f})");
-                Console.Write($"-{string.Join("-", dragon.Value.OrderBy(x => x.Key).Select(x => $"{x.Key} -> damage: {x.Value[0]}, health: {x.Value[1]}, armor: {x.Value[2]}\n"))}"); 
+                Console.Write($"-{string.Join("-", dragon.Value.OrderBy(x => x.Key)
+			      .Select(x => $"{x.Key} -> damage: {x.Value[0]}, health: {x.Value[1]}, armor: {x.Value[2]}\n"))}"); 
 	    }
         }
 
