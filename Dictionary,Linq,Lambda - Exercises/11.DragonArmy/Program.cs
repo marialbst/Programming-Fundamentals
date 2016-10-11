@@ -60,7 +60,7 @@ namespace _11.DragonArmy
 
             for (int k = 0; k < 3; k++)
             {
-                dragons[color][name][k] += numbers[k];
+                dragons[color][name][k] = numbers[k];
             }
         }
 
