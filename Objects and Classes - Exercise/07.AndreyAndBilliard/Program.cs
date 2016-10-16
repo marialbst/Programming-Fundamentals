@@ -71,7 +71,7 @@ namespace _07.AndreyAndBilliard
 
                 foreach (var order in client.Order)
                 {
-                    client.Bill = order.Value * menuItems[order.Key];
+                    client.Bill += order.Value * menuItems[order.Key];
                     Console.WriteLine("-- {0} - {1}", order.Key, order.Value);
                 }
 
@@ -106,10 +106,10 @@ namespace _07.AndreyAndBilliard
         }
     }
 
-    class Client
-    {
-        public string Name { get; set; }
-        public Dictionary<string, int> Order { get; set; }
-        public decimal Bill { get; set; }
-    }
+//    class Client
+//    {
+//        public string Name { get; set; }
+//        public Dictionary<string, int> Order { get; set; }
+//        public decimal Bill { get; set; }
+//    }
 }
