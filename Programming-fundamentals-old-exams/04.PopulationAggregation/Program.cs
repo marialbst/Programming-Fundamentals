@@ -1,29 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _04.PopulationAggregation
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string command = Console.ReadLine();
-            Dictionary<string, Dictionary<string, int>> countries = new Dictionary<string, Dictionary<string, int>>();
+
+            Dictionary<string, int> citiesByCountry = new Dictionary<string, int>();
+            Dictionary<string, long> populationByCity = new Dictionary<string, long>();
+
             while (!command.Equals("stop"))
             {
                 string[] data = command.Split('\\');
                 string city = "";
                 string country = "";
-                int population = int.Parse(data[2]);
-                for (int i=0;i<2;i++)
+                long population = long.Parse(data[2]);
+                for (int i = 0; i < 2; i++)
                 {
-                    data[i] =
-                        data[i].Split(new char[] {'@', '$', '&', '#', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'},
-                            StringSplitOptions.RemoveEmptyEntries).ToString();
+                    data[i] = string.Join("", data[i].Split(new char[] { '@', '$', '&', '#', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' },
+                            StringSplitOptions.RemoveEmptyEntries));
+
                 }
 
                 if (data[0].StartsWith(data[0].ToLower()))
@@ -37,26 +37,37 @@ namespace _04.PopulationAggregation
                     country = data[0];
                 }
 
-                if (!countries.ContainsKey(country))
+
+                if (!citiesByCountry.ContainsKey(country))
                 {
-                    countries.Add(country, new Dictionary<string, int>());
+                    citiesByCountry.Add(country, 0);
                 }
 
-                if (!countries[country].ContainsKey(city))
+                citiesByCountry[country]++;
+
+                if (!populationByCity.ContainsKey(city))
                 {
-                    countries[country].Add(city, 0);
+                    populationByCity.Add(city, 0);
                 }
 
-                countries[country][city] = population;
+                populationByCity[city] = population;
+
                 command = Console.ReadLine();
             }
 
-            foreach (var country in countries)
+            foreach (var country in citiesByCountry.OrderBy(x => x.Key))
             {
-                Console.WriteLine($"{country.Key} -> {country.Value.Keys.Count}");
+                Console.WriteLine("{0} -> {1}", country.Key, country.Value);
+
+            }
+
+            foreach (var city in populationByCity.OrderByDescending(x => x.Value).Take(3))
+            {
+
+                Console.WriteLine("{0} -> {1}", city.Key, city.Value);
             }
         }
     }
 
-    
+
 }
