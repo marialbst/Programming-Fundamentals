@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.MatchFullname", "01.MatchFullname\01.MatchFullname.csproj", "{F918CE4D-45B3-4F7A-81FB-00C3E18FD673}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.MatchPhone", "02.MatchPhone\02.MatchPhone.csproj", "{0761BC9A-0ADD-4588-A0BE-3BC05288F24E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.ExtractHyperlinks", "08.ExtractHyperlinks\08.ExtractHyperlinks.csproj", "{7537E16B-DC55-485D-B73E-98AD2E34A21F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F918CE4D-45B3-4F7A-81FB-00C3E18FD673}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F918CE4D-45B3-4F7A-81FB-00C3E18FD673}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F918CE4D-45B3-4F7A-81FB-00C3E18FD673}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F918CE4D-45B3-4F7A-81FB-00C3E18FD673}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0761BC9A-0ADD-4588-A0BE-3BC05288F24E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0761BC9A-0ADD-4588-A0BE-3BC05288F24E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0761BC9A-0ADD-4588-A0BE-3BC05288F24E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0761BC9A-0ADD-4588-A0BE-3BC05288F24E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7537E16B-DC55-485D-B73E-98AD2E34A21F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7537E16B-DC55-485D-B73E-98AD2E34A21F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7537E16B-DC55-485D-B73E-98AD2E34A21F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7537E16B-DC55-485D-B73E-98AD2E34A21F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

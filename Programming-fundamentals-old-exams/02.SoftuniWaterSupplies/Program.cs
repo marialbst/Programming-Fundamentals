@@ -24,73 +24,47 @@ namespace _02.SoftuniWaterSupplies
             else //ако не е - започвам да пълня
             {
                 long counter = 0;
-                Console.WriteLine("We need more water!");
+                List<int> indexesLeft = new List<int>();
+
+
                 //за нечетно к-во
                 if (waterAvailable % 2 != 0)
                 {
-                    FillBottlesForOddQuantity(bottles, bottlesCapacity, ref initial, ref counter);
+                    for (int i = bottles.Count - 1; i >= 0; i--)
+                    {
+                        FillBottles(bottles, bottlesCapacity, ref initial, ref counter, indexesLeft, i);
+
+                    }
                 }
                 else //за четно количество
                 {
-                    FillBottlesForEvenQuantity(bottles, bottlesCapacity, ref initial, ref counter);
-                }
+                    for (int i = 0; i < bottles.Count; i++)
+                    {
+                        FillBottles(bottles, bottlesCapacity, ref initial, ref counter, indexesLeft, i);
 
+                    }
+
+                }
+                Console.WriteLine("We need more water!");
+                Console.WriteLine("Bottles left: {0}", bottles.Count - counter);
+                Console.Write($"With indexes: {string.Join(", ", indexesLeft)}");
                 Console.WriteLine();
                 Console.WriteLine("We need {0} more liters!", neededWater - waterAvailable);
             }
         }
 
-        private static void FillBottlesForEvenQuantity(List<decimal> bottles, long bottlesCapacity, ref decimal initial, ref long counter)
+        private static void FillBottles(List<decimal> bottles, long bottlesCapacity, ref decimal initial, ref long counter, List<int> indexesLeft, int i)
         {
-            for (int i = 0; i < bottles.Count; i++)
+            decimal needed = bottlesCapacity - bottles[i];
+            if (initial < needed)
             {
-                decimal needed = bottlesCapacity - bottles[i];
-
-                if (initial < needed)
-                {
-                    break;
-                }
-                else
-                {
-                    bottles[i] += needed;
-                    initial -= needed;
-                    counter++;
-                }
-
+                indexesLeft.Add(i);
             }
-            Console.WriteLine("Bottles left: {0}", bottles.Count - counter);
-            Console.Write("With indexes: ");
-            for (long i = 0; i < bottles.Count - counter; i++)
+            else
             {
-                Console.Write(i == bottles.Count - counter - 1 ? "{0}" : "{0}, ", i);
-            }
-        }
-
-        private static void FillBottlesForOddQuantity(List<decimal> bottles, long bottlesCapacity, ref decimal initial, ref long counter)
-        {
-            for (int i = bottles.Count - 1; i >= 0; i--)
-            {
-                decimal needed = bottlesCapacity - bottles[i];
-
-                if (initial < needed)
-                {
-                    break;
-                }
-                else
-                {
-                    bottles[i] += needed;
-                    initial -= needed;
-                    counter++;
-                }
-            }
-
-
-            Console.WriteLine("Bottles left: {0}", bottles.Count - counter);
-            Console.Write("With indexes: ");
-
-            for (long i = (bottles.Count - counter - 1); i >= 0; i--)
-            {
-                Console.Write(i == 0 ? "{0}" : "{0}, ", i);
+                bottles[i] += needed;
+                initial -= needed;
+                counter++;
             }
         }
     }
