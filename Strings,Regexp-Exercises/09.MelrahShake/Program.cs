@@ -14,9 +14,9 @@ namespace _09.MelrahShake
                 int firstIndex = text.IndexOf(pattern, StringComparison.Ordinal);
                 int lastIndex = text.LastIndexOf(pattern, StringComparison.Ordinal);
 
-                if (firstIndex >= 0 && lastIndex > firstIndex)
+                if (firstIndex >= 0 && lastIndex > firstIndex + pattern.Length)
                 {
-                    text = text.Remove(lastIndex, pattern.Length);
+                    text = text.Remove(lastIndex, pattern.Length );
                     text = text.Remove(firstIndex, pattern.Length);
                     Console.WriteLine("Shaked it.");
                     //Console.WriteLine(text);
