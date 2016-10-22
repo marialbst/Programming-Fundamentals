@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.QueryMess", "14.QueryMes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.UseYourChains", "14.UseYourChains\14.UseYourChains.csproj", "{016D5CA8-4520-431A-B0C8-52C99E3D8F9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{2E8B0157-406C-4D61-9A56-AFAAFDD85A9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{016D5CA8-4520-431A-B0C8-52C99E3D8F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{016D5CA8-4520-431A-B0C8-52C99E3D8F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{016D5CA8-4520-431A-B0C8-52C99E3D8F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E8B0157-406C-4D61-9A56-AFAAFDD85A9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E8B0157-406C-4D61-9A56-AFAAFDD85A9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E8B0157-406C-4D61-9A56-AFAAFDD85A9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E8B0157-406C-4D61-9A56-AFAAFDD85A9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -14,7 +14,7 @@ namespace _09.MelrahShake
                 int firstIndex = text.IndexOf(pattern, StringComparison.Ordinal);
                 int lastIndex = text.LastIndexOf(pattern, StringComparison.Ordinal);
 
-                if (firstIndex >= 0 && lastIndex > firstIndex)
+                if (firstIndex >= 0 && lastIndex > firstIndex + pattern.Length-1)
                 {
                     text = text.Remove(lastIndex, pattern.Length);
                     text = text.Remove(firstIndex, pattern.Length);
@@ -27,9 +27,9 @@ namespace _09.MelrahShake
                     Console.WriteLine("No shake.");
                     break;
                 }
-
                 pattern = pattern.Remove(pattern.Length / 2, 1);
             }
+
             Console.WriteLine(text);
         }
     }
